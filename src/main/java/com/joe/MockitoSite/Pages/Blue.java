@@ -2,12 +2,12 @@ package com.joe.MockitoSite.Pages;
 
 import org.springframework.stereotype.Component;
 
-import Services.WeatherAccessor;
+import Services.Weather.WeatherService;
 
 @Component
 public class Blue {
 	public String getText() {
-		WeatherAccessor w = new WeatherAccessor();
-		return w.getWeather();
+		WeatherService w = new WeatherService();
+		return w.getWeatherString();
 	}
 }
